@@ -1,71 +1,92 @@
 /* Adding Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-:root{
+
+:root {
     --font-primary: "Quicksand", sans-serif;
     --card_paragraph_font_size: 1rem;
-    --font_weight1: 500;
+    --font-weight1: 500;
     --font-weight2: 600;
     --font-weight3: 700;
 }
-body{
+
+body {
     font-family: var(--font-primary);
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
 }
+
 /* Setting Default Customization */
-header, main{
-    margin: 0 8.75rem;
+header,
+main,
+footer {
+    max-width: 90rem;
+    margin: 0 auto;
+    /* Centers the content if the viewport width exceeds 90rem */
 }
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-a{
+a {
     text-decoration: none;
 }
-.color1{
+
+.color1 {
     color: orange;
 }
-.color2{
+
+.color2 {
     color: skyblue;
 }
-.color3{
+
+.color3 {
     color: #05D4DF;
 }
-.color4{
+
+.color4 {
     color: #5D58EF;
 }
-.color5{
+
+.color5 {
     color: #202020;
 }
-.color6{
+
+.color6 {
     color: #808080;
 }
-.color7{
+
+.color7 {
     color: #666666;
 }
-.bg1{
+
+.bg1 {
     background-color: orange;
 }
-.bg2{
+
+.bg2 {
     background-color: black;
 }
-.bg3{
+
+.bg3 {
     background-color: #01ACFD;
 }
-.bg4{
+
+.bg4 {
     background-color: #3CD8E8;
 }
-.bg5{
+
+.bg5 {
     background-color: #95B226;
 }
-.bg6{
+
+.bg6 {
     background-color: #5D58F0;
 }
-.button1{
-    padding: .625rem;
+
+.button1 {
+    padding: .625rem 2.5rem;
     color: white;
     font-size: 1.25rem;
     font-weight: var(--font-weight2);
@@ -73,99 +94,269 @@ a{
     border-radius: .75rem;
     cursor: pointer;
     text-align: center;
-    width: 12.3125rem;
+    /* width: 12.3125rem; */
 }
-.button2{
+
+.button2 {
     padding: .625rem;
     color: white;
-    font-size: var(--card_paragraph_font_size); 
-    font-weight: var(--font_weight3);
+    font-size: var(--card_paragraph_font_size);
+    font-weight: var(--font-weight3);
     border: none;
     border-radius: 2.9375rem;
     cursor: pointer;
     text-align: center;
-    width: 10.875rem;
 }
-.nav_heading{
+
+.nav_heading {
     font-size: 2rem;
-    font-weight: var(--font_weight3);
+    font-weight: var(--font-weight3);
 }
-.nav_links{
+
+.nav_links {
     font-size: 1.25rem;
-    font-weight: var(--font-weight3);   
+    font-weight: var(--font-weight3);
 }
-.banner_heading{
+
+.banner_heading {
     font-size: 3.5rem;
     font-weight: var(--font-weight3);
 }
-.banner_paragraph{
+
+.banner_paragraph {
     font-size: 1.25rem;
 }
-.standard_curriculum_heading, .our_stories_heading{
+
+.standard_curriculum_heading,
+.our_stories_heading {
     font-size: 2.875rem;
-    font-weight: var(--font_weight3);
+    font-weight: var(--font-weight3);
 }
-.standard_curriculum_card_heading, .our_stories_card_heading, .footer_bookmarks_heading{
+
+.standard_curriculum_card_heading,
+.our_stories_card_heading,
+.footer_bookmarks_heading {
     font-size: 1.5rem;
     font-weight: var(--font-weight3);
 }
-.standard_curriculum_card_paragraph, .out_stories_card_paragraph{
-    font-weight: var(--font_weight1);
+
+.standard_curriculum_card_paragraph,
+.our_stories_card_paragraph {
+    font-weight: var(--font-weight1);
     font-size: var(--card_paragraph_font_size);
 }
-.standard_curriculum_card_links, .our_stories_secondary_card_heading{
+
+.standard_curriculum_card_links,
+.our_stories_secondary_card_heading {
     font-weight: var(--font-weight3);
 }
-footer{
+
+footer {
     color: white;
 }
-.footer_heading{
+
+.footer_heading {
     font-size: 2.625rem;
     font-weight: var(--font-weight3);
 }
-.footer_paragraph{
+
+.footer_paragraph {
     font-size: 1.25rem;
 }
-.footer_bookmark{
+
+.footer_bookmark {
     font-size: 1.25rem;
-    font-weight: var(--font_weight1);
+    font-weight: var(--font-weight1);
 }
-.footer_social_links_heading{
+
+.footer_social_links_heading {
     font-size: 1.625rem;
     font-weight: var(--font-weight3);
 }
+
+/* nav section */
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_home_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_links_container {
+    display: flex;
+}
+.menu_bar {
+    display: none;
+}
+
 /* Media Queries */
-/* for large(1440px-2k) and ultra-wide(2160px-4k) desktops screen. */
-@media (max-width: 1600px) {
+/* 4K*/ 
+@media (max-width: 2160px) {
     html {
-        font-size: 18px; 
+        font-size: 24px;
+    }
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 13.2188rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: 1.875rem 0;
+    }
+    .nav_links{
+        gap: 3rem;
     }
 }
 
-/* for standard desktop(FHD) screens */
+/* 2K */
+@media (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+    /* Setting Default Customization */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 8.8125rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: 1.25rem 0;
+    }
+    .nav_links{
+        gap: 2rem;
+    }
+}
+
+/* Full HD */
 @media (max-width: 1024px) {
     html {
-        font-size: 16px; 
+        font-size: 16px;
+    }
+
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 6.25rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: .8888rem 0;
+    }
+    .nav_links{
+        gap: 1.375rem;
     }
 }
 
-/* for tablets and hd screens */
+/* Tablet and HD resolution */
 @media (max-width: 768px) {
     html {
-        font-size: 14px; /* Font size  */
+        font-size: 12px;
+    }
+
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 4.7rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: .6663rem 0;
+    }
+    .nav_links{
+        gap: 1rem;
     }
 }
 
-/* for larger phones screens */
+/* Large mobile devices */
 @media (max-width: 425px) {
     html {
-        font-size: 13px; 
+        font-size: 6.6px;
+    }
+
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 2.6rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: .3688rem 0;
+    }
+    .nav_links_container,
+    .button1,
+    .nav_heading {
+        display: none;
+    }
+    .menu_bar {
+        display: block;
+        font-size: 10rem;
+    }
+    .nav_home_logo{
+        width: 10rem;
+        height: 10rem;
+    }
+    #nav_section {
+        border: 1px solid orange;
     }
 }
 
-/* for very small phones */
+/* Medium mobile devices */
+@media (max-width: 375px) {
+    html {
+        font-size: 5.8px;
+    }
+
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 2.2944rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: .325rem 0;
+    }
+
+}
+
+/* Very small phones */
 @media (max-width: 320px) {
     html {
-        font-size: 12px; 
+        font-size: 5px;
+    }
+
+    /* Setting Default Customization  */
+    #nav_section,
+    #banner_section,
+    #standard_curriculum_section,
+    #our_stories_section,
+    #footer_section {
+        padding: 0 1.9581rem;
+    }
+    /* nav section */
+    .nav_container{
+        padding: .275rem 0;
     }
 }
