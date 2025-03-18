@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 :root{
     --font-primary: "Quicksand", sans-serif;
+    --card_paragraph_font_size: 1rem;
+    --font_weight1: 500;
+    --font-weight2: 600;
+    --font-weight3: 700;
 }
 body{
     font-family: var(--font-primary);
@@ -10,3 +14,158 @@ body{
     font-style: normal;
 }
 /* Setting Default Customization */
+header, main{
+    margin: 0 8.75rem;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.color1{
+    color: orange;
+}
+.color2{
+    color: skyblue;
+}
+.color3{
+    color: #05D4DF;
+}
+.color4{
+    color: #5D58EF;
+}
+.color5{
+    color: #202020;
+}
+.color6{
+    color: #808080;
+}
+.color7{
+    color: #666666;
+}
+.bg1{
+    background-color: orange;
+}
+.bg2{
+    background-color: black;
+}
+.bg3{
+    background-color: #01ACFD;
+}
+.bg4{
+    background-color: #3CD8E8;
+}
+.bg5{
+    background-color: #95B226;
+}
+.bg6{
+    background-color: #5D58F0;
+}
+.button1{
+    padding: .625rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight2);
+    border: none;
+    border-radius: .75rem;
+    cursor: pointer;
+    text-align: center;
+    width: 12.3125rem;
+}
+.button2{
+    padding: .625rem;
+    color: white;
+    font-size: var(--card_paragraph_font_size); 
+    font-weight: var(--font_weight3);
+    border: none;
+    border-radius: 2.9375rem;
+    cursor: pointer;
+    text-align: center;
+    width: 10.875rem;
+}
+.nav_heading{
+    font-size: 2rem;
+    font-weight: var(--font_weight3);
+}
+.nav_links{
+    font-size: 1.25rem;
+    font-weight: var(--font-weight3);   
+}
+.banner_heading{
+    font-size: 3.5rem;
+    font-weight: var(--font-weight3);
+}
+.banner_paragraph{
+    font-size: 1.25rem;
+}
+.standard_curriculum_heading, .our_stories_heading{
+    font-size: 2.875rem;
+    font-weight: var(--font_weight3);
+}
+.standard_curriculum_card_heading, .our_stories_card_heading, .footer_bookmarks_heading{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight3);
+}
+.standard_curriculum_card_paragraph, .out_stories_card_paragraph{
+    font-weight: var(--font_weight1);
+    font-size: var(--card_paragraph_font_size);
+}
+.standard_curriculum_card_links, .our_stories_secondary_card_heading{
+    font-weight: var(--font-weight3);
+}
+footer{
+    color: white;
+}
+.footer_heading{
+    font-size: 2.625rem;
+    font-weight: var(--font-weight3);
+}
+.footer_paragraph{
+    font-size: 1.25rem;
+}
+.footer_bookmark{
+    font-size: 1.25rem;
+    font-weight: var(--font_weight1);
+}
+.footer_social_links_heading{
+    font-size: 1.625rem;
+    font-weight: var(--font-weight3);
+}
+/* Media Queries */
+/* for large(1440px-2k) and ultra-wide(2160px-4k) desktops screen. */
+@media (max-width: 1600px) {
+    html {
+        font-size: 18px; 
+    }
+}
+
+/* for standard desktop(FHD) screens */
+@media (max-width: 1024px) {
+    html {
+        font-size: 16px; 
+    }
+}
+
+/* for tablets and hd screens */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Font size  */
+    }
+}
+
+/* for larger phones screens */
+@media (max-width: 425px) {
+    html {
+        font-size: 13px; 
+    }
+}
+
+/* for very small phones */
+@media (max-width: 320px) {
+    html {
+        font-size: 12px; 
+    }
+}
