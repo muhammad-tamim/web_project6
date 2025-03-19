@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,10 @@
     <!-- style.css Connector -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header+main+footer -->
-    <header> 
+    <header>
         <!-- (section#nav_section>nav)+(section#banner_section) -->
         <section id="nav_section">
             <nav class="nav_container">
@@ -35,7 +37,19 @@
                 </div>
             </nav>
         </section>
-        <section id="banner_section"></section>
+        <section id="banner_section">
+            <!-- div>((div>(h1+p+div>button))+div>img)  -->
+            <div class="banner_container">
+                <div class="banner_content">
+                    <h1 class="banner_heading"><span class="color1">Empowering</span><br>
+                        students from small<br>age <span class="color3">towards vision</span></h1>
+                    <p class="banner_paragraph">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a
+                        Diverse and Dynamic World.</p>
+                    <div><button class="button1 bg2">Enroll Now</button></div>
+                </div>
+                <div><img class="banner_image" src="assets/images/hero-kids.png" alt="Banner Image"></div>
+            </div>
+        </section>
     </header>
     <main>
         <!-- section#standard_curriculum_section+section#our_stories_section -->
@@ -44,7 +58,8 @@
     </main>
     <footer>
         <!-- section#footer_section -->
-        <section id="footer_section"></section>         
+        <section id="footer_section"></section>
     </footer>
 </body>
+
 </html>
