@@ -16,7 +16,9 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
+.hide{
+    display: none;
+}
 /* Setting Default Customization */
 header,
 main,
@@ -249,13 +251,86 @@ footer {
     display: flex;
     justify-content: center;
     gap: .625rem;
-    padding: 5rem 0 3.75rem;
+    padding: 5rem 0 1rem;
 }
 .arrow{
     background-color: var(--primary-color);
     border-radius: 100%;
     padding: 1.0625rem  1.375rem 1.1875rem;
     cursor: pointer;
+}
+/* our stories section */
+.our_stories_section_bg{
+    background: url('assets/images/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.our_stories_heading_extra_styles{
+    text-align: center;
+    padding: 3.75rem 0 5rem;
+}
+.our_stories_card_date{
+    width: 10.875rem;
+    padding: .875rem 1.125rem;
+    border-radius: 2.9375rem;
+    color: white;
+    font-weight: 500;
+    font-size: .9375rem;
+    position: absolute; 
+    bottom: -0.9375rem;
+    left: 2.375rem;
+}
+.our_stories_card_date2{
+    width: 10.875rem;
+    padding: .5625rem 1.125rem;
+    border-radius: 2.9375rem;
+    color: white;
+    font-weight: 500;
+    font-size: .9375rem;
+    position: absolute;
+    bottom: -0.9375rem;
+    left: 1.5rem;
+}
+.our_stories_all_card_container{
+    display: flex;
+    gap: 1.1875rem;
+}
+.our_stories_all_card_container img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+    /*top-left, top-right, bottom-left, bottom-right  */
+}
+.our_stores_large_card{
+    border-radius: 1rem;
+    background-color: white;
+    width: 90%;
+}
+.our_stores_large_card_image_container{
+    position: relative;
+}
+.our_stores_large_card_content{
+    padding: 2.0625rem 2.375rem;
+}
+.our_stores_large_card_content h2{
+    padding-bottom: 2.9375rem;
+}
+.our_stores_small_card_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1875rem;
+}
+.our_stories_small_card{
+    border-radius: 1rem;
+    background-color: white;
+}
+.our_stories_small_card_image_container{
+    position: relative;
+}
+.our_stories_secondary_card_heading_extra_styles{
+    padding: 2rem 1rem 2rem 1rem;
+}
+.our_stories_button{
+    text-align: center;
+    padding: 5rem 0 3.75rem;
 }
 /* Media Queries */
 /* 4K*/
@@ -477,6 +552,13 @@ footer {
     }
     .standard_curriculum_card_paragraph_extra_styles{
         width: 22rem;
+    }
+    /* Our Stories Section */
+    .our_stores_large_card{
+        display: none;
+    }
+    .hide{
+        display: block;
     }
 }
 
