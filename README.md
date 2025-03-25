@@ -50,9 +50,9 @@ https://muhammad-tamim.github.io/web_project6/
 <br>
 
 2. **Using a Formula to Determine the Perfect Size Based on Figma Design:**
+    ![alt text](assets/images/image.png)
 
     My Figma design was created for a 2K (1440px) resolution, so I used a specific method to adjust sizes dynamically for different screen sizes.
-    ![alt text](assets/images/image.png)
 
 4. **Using VS Code Emmet Abbreviations**
    
