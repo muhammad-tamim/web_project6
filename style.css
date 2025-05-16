@@ -16,9 +16,11 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-.hide{
+
+.hide {
     display: none;
 }
+
 /* Setting Default Customization */
 header,
 main,
@@ -65,9 +67,11 @@ a {
 .color7 {
     color: #666666;
 }
-.color8{
+
+.color8 {
     color: #8700FF;
 }
+
 .bg1 {
     background-color: var(--primary-color);
 }
@@ -91,18 +95,23 @@ a {
 .bg6 {
     background-color: #5D58F0;
 }
-.bg7{
+
+.bg7 {
     background-color: #3B5998;
 }
-.bg8{
+
+.bg8 {
     background-color: #EA4C89;
 }
-.bg9{
+
+.bg9 {
     background-color: #1DA1F2;
 }
-.bg10{
+
+.bg10 {
     background-color: #DD4B39;
 }
+
 .button1 {
     padding: .625rem 2.5rem;
     color: white;
@@ -237,14 +246,15 @@ footer {
 
 .standard_curriculum_card2 {
     border: 0.94px solid rgb(255, 244, 220);
-    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .standard_curriculum_card3 {
     border: 0.94px solid rgb(242, 232, 255);
-    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.standard_curriculum_card_extra_styles{
+
+.standard_curriculum_card_extra_styles {
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     border-radius: 18.86px;
     display: flex;
@@ -254,42 +264,49 @@ footer {
     padding: 0 2.5rem 3.3125rem;
     text-align: center;
 }
-.standard_curriculum_card_container{
+
+.standard_curriculum_card_container {
     display: flex;
     gap: 1.75rem;
 }
-.standard_curriculum_card_arrow{
+
+.standard_curriculum_card_arrow {
     display: flex;
     justify-content: center;
     gap: .625rem;
     padding: 5rem 0 1rem;
 }
-.arrow{
+
+.arrow {
     background-color: var(--primary-color);
     border-radius: 100%;
-    padding: 1.0625rem  1.375rem 1.1875rem;
+    padding: 1.0625rem 1.375rem 1.1875rem;
     cursor: pointer;
 }
+
 /* our stories section */
-.our_stories_section_bg{
-    background: url('assets/images/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+.our_stories_section_bg {
+    background: url('assets/images/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
-.our_stories_heading_extra_styles{
+
+.our_stories_heading_extra_styles {
     text-align: center;
     padding: 3.75rem 0 5rem;
 }
-.our_stories_card_date{
+
+.our_stories_card_date {
     width: 10.875rem;
     padding: .875rem 1.125rem;
     border-radius: 2.9375rem;
     color: white;
     font-weight: 500;
     font-size: .9375rem;
-    position: absolute; 
+    position: absolute;
     bottom: -0.9375rem;
     left: 2.375rem;
 }
-.our_stories_card_date2{
+
+.our_stories_card_date2 {
     width: 10.875rem;
     padding: .5625rem 1.125rem;
     border-radius: 2.9375rem;
@@ -300,89 +317,109 @@ footer {
     bottom: -0.9375rem;
     left: 1.5rem;
 }
-.our_stories_all_card_container{
+
+.our_stories_all_card_container {
     display: flex;
     gap: 1.1875rem;
 }
-.our_stories_all_card_container img{
+
+.our_stories_all_card_container img {
     width: 100%;
     height: auto;
     border-radius: 1rem 1rem 0 0;
     /*top-left, top-right, bottom-left, bottom-right  */
 }
-.our_stores_large_card{
+
+.our_stores_large_card {
     border-radius: 1rem;
     background-color: white;
     width: 90%;
 }
-.our_stores_large_card_image_container{
+
+.our_stores_large_card_image_container {
     position: relative;
 }
-.our_stores_large_card_content{
+
+.our_stores_large_card_content {
     padding: 2.0625rem 2.375rem;
 }
-.our_stores_large_card_content h2{
+
+.our_stores_large_card_content h2 {
     padding-bottom: 2.9375rem;
 }
-.our_stores_small_card_container{
+
+.our_stores_small_card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.1875rem;
 }
-.our_stories_small_card{
+
+.our_stories_small_card {
     border-radius: 1rem;
     background-color: white;
 }
-.our_stories_small_card_image_container{
+
+.our_stories_small_card_image_container {
     position: relative;
 }
-.our_stories_secondary_card_heading_extra_styles{
+
+.our_stories_secondary_card_heading_extra_styles {
     padding: 2rem 1rem 2rem 1rem;
 }
-.our_stories_button{
+
+.our_stories_button {
     text-align: center;
     padding: 5rem 0 3.75rem;
 }
+
 /* Footer Section */
-.footer_container{
+.footer_container {
     padding: 7.625rem 0 10.625rem;
     display: flex;
     justify-content: space-between;
 }
-.footer_logo{
+
+.footer_logo {
     display: flex;
     align-items: center;
 }
-.footer_image img{
+
+.footer_image img {
     width: auto;
-    height: 100%; 
-} 
-.footer_logo_content{
+    height: 100%;
+}
+
+.footer_logo_content {
     width: 25rem;
     padding-top: 2.1875rem;
 }
-.footer_bookmark{
+
+.footer_bookmark {
     color: white;
 }
-.footer_bookmark_container p{
+
+.footer_bookmark_container p {
     padding-top: 2rem;
 }
-.social_links_container{
+
+.social_links_container {
     display: flex;
     gap: .625rem;
     padding-top: 2rem;
 }
-.social_links_container p{
+
+.social_links_container p {
     padding: .625rem;
     cursor: pointer;
     font-size: 1.25rem;
     border-radius: .25rem;
 }
+
 /* Media Queries */
 /* 4K*/
 @media (max-width: 2160px) {
     html {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     /* Setting Default Customization  */
@@ -402,11 +439,13 @@ footer {
     .nav_links {
         gap: 3rem;
     }
+
     /* banner section */
     .banner_paragraph {
         padding: 2.25rem 0;
         width: 40rem;
     }
+
     .banner_image {
         width: 30vw;
     }
@@ -445,8 +484,9 @@ footer {
     .banner_image {
         width: 30vw;
     }
+
     /* standard Curriculum section */
-    
+
 }
 
 /* Full HD */
@@ -487,13 +527,15 @@ footer {
     .banner_image {
         width: 30vw;
     }
+
     /* standard curriculum section */
-    .standard_curriculum_card_extra_styles{
+    .standard_curriculum_card_extra_styles {
         gap: .7rem;
         padding: 0 1rem 1rem;
 
     }
-    .standard_curriculum_card_heading{
+
+    .standard_curriculum_card_heading {
         font-size: 1.125rem;
     }
 
@@ -592,22 +634,27 @@ footer {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
+
     /* standard curriculum section */
-    .standard_curriculum_card_container{
+    .standard_curriculum_card_container {
         flex-direction: column;
     }
-    .standard_curriculum_card_paragraph_extra_styles{
+
+    .standard_curriculum_card_paragraph_extra_styles {
         width: 22rem;
     }
+
     /* Our Stories Section */
-    .our_stores_large_card{
+    .our_stores_large_card {
         display: none;
     }
-    .hide{
+
+    .hide {
         display: block;
     }
+
     /* Footer section */
-    .footer_container{
+    .footer_container {
         flex-direction: column;
     }
 }
