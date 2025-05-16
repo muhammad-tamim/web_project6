@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/47e6b553-ab5e-46c0-aaca-a4f1c957c214
 # Project Name: Kids-Education
 
 # Project Description:
